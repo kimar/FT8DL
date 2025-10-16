@@ -50,8 +50,8 @@
     <color name="calling_list3_start_color">#8D4CA8FB</color>
     <color name="calling_list3_end_color">#1B607D96</color>
 
-    <color name="button_start_color">#4E1DBC</color>
-    <color name="button_end_color">#442C78</color>
+    <color name="button_start_color">@color/purple_200</color>
+    <color name="button_end_color">@color/purple_200</color>
     <color name="message_text_color">#FAF6D2</color>
     <color name="message_in_my_call_text_color">#FA9E9E</color>
     <color name="textview_cq_color">#AB975A01</color>

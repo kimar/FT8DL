@@ -47,10 +47,10 @@
     <color name="transparent">#00000000</color>
     <color name="image_button_pressed">#ff53c1bd</color>
 
-    <color name="button_start_color">#6826FA</color>
-    <color name="button_end_color">#8F5FFA</color>
+    <color name="button_start_color">@color/purple_200</color>
+    <color name="button_end_color">@color/purple_700</color>
 
-    <color name="button_tracker_button_color">#6826FA</color>
+    <color name="button_tracker_button_color">@color/primary</color>
 
     <color name="button_stroke_color">#CB0649BB</color>
     <color name="flex_meter_ruler_end_color">#CB0649BB</color>
