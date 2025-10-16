@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="transmitLayout_background">#B233007E</color>
+    <color name="purple_200">#768948</color>
+    <color name="primary">#607744</color>
+    <color name="transmitLayout_background">#B234623f</color>
 
 
     <color name="tracker_sample_qsl_color">#7fff0000</color>
-    <color name="tracker_sample_qsl_text_color">#FFFFFF</color>
+    <color name="tracker_sample_qsl_text_color">#FFFFFFFF</color>
     <color name="tracker_sample_qso_color">#7fffff00</color>
     <color name="tracker_sample_qso_text_color">#FF0000</color>
     <color name="tracker_sample_qsx_color">#7f0000ff</color>
@@ -17,24 +17,24 @@
 
 
 
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#4DD0E1</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="purple_700">#34623f</color>
+    <color name="teal_200">#b39c4d</color>
+    <color name="teal_700">#b39c4d</color>
+    <color name="black">#1e2f23</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bar_text_view_color">#ffffffff</color>
     <color name="message_text_color">#3A3A3A</color>
     <color name="message_in_my_call_text_color">#FF3A3A</color>
     <color name="fromcall_is_qso_text_color">#0E4EEF</color>
-    <color name="tracker_select_line_color">#B58200</color>
+    <color name="tracker_select_line_color">#b39c4d</color>
     <color name="tracker_line_color">#FFFFFFFF</color>
     <color name="tracker_in_my_line_color">#ffFF1E27</color>
     <color name="tracker_history_line_color">#2196F3</color>
 
 
     <color name="volume_progress_value">#FFFFFFFF</color>
-    <color name="power_progress_value">#ff264A68</color>
-    <color name="power_progress_radar_value">#B552AEF8</color>
+    <color name="power_progress_value">#ff34623f</color>
+    <color name="power_progress_radar_value">#B5b39c4d</color>
 
 
     <color name="is_not_qsl_text_color">#FF3A3A</color>
