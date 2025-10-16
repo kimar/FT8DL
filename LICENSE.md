@@ -1,5 +1,6 @@
 MIT License
 
+Copyright (c) 2025 DA6KM
 Copyright (c) 2023 BG7YOZ
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
