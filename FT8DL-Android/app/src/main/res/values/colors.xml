@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- new colors from https://coolors.co/b39c4d-768948-607744-34623f-1e2f23 -->
+    <color name="satin_sheen_gold">#b39c4d</color>
+    <color name="moss_green">#768948</color>
+    <color name="fern_green">#607744</color>
+    <color name="hunter_green">#34623f</color>
+    <color name="dark_green">#1e2f23</color>
+
+    <!-- existing colors -->
     <color name="purple_200">#768948</color>
     <color name="primary">#607744</color>
     <color name="transmitLayout_background">#B234623f</color>
