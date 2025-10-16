@@ -82,11 +82,9 @@ dependencies {
 
     implementation 'com.google.guava:guava:31.1-jre'//用于HashTable（多key的HashMap）
 
-
-
-    implementation files('src/libs/MPAndroidChartv_3.1.0.jar')
-    implementation files('src/libs/commons-net-3.6.jar')////用于时间同步
-    implementation files('src/libs/nanohttpd-2.2.0.jar')
-    implementation files('src/libs/osmdroid-android-6.1.14.aar')//地图控件
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation "commons-net:commons-net:3.9.0"
+    implementation "org.nanohttpd:nanohttpd:2.2.0"
+    implementation "org.osmdroid:osmdroid-android:6.1.20"
 
 }
