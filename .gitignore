@@ -1,5 +1,16 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
-ft8CN/app/.gitignore 2
-ft8CN/.gitignore 2
-.FT8CN软件设计初衷及使用说明0.88版.pdf.icloud
-ft8CN/app/src/main/assets/.nightUSGS4Layer.sqlite.icloud
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.DS_Store
