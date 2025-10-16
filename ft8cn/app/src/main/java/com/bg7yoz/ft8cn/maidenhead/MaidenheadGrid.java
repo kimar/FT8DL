@@ -12,7 +12,7 @@ import android.location.LocationManager;
 
 import com.bg7yoz.ft8cn.GeneralVariables;
 import com.bg7yoz.ft8cn.R;
-import com.google.android.gms.maps.model.LatLng;
+import com.bg7yoz.ft8cn.data.LatLng;
 
 import java.util.List;
 

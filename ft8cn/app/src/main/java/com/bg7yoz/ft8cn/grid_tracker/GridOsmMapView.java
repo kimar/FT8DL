@@ -27,10 +27,10 @@ import com.bg7yoz.ft8cn.Ft8Message;
 import com.bg7yoz.ft8cn.GeneralVariables;
 import com.bg7yoz.ft8cn.MainViewModel;
 import com.bg7yoz.ft8cn.R;
+import com.bg7yoz.ft8cn.data.LatLng;
 import com.bg7yoz.ft8cn.database.DatabaseOpr;
 import com.bg7yoz.ft8cn.log.QSLRecordStr;
 import com.bg7yoz.ft8cn.maidenhead.MaidenheadGrid;
-import com.google.android.gms.maps.model.LatLng;
 
 import org.osmdroid.tileprovider.IRegisterReceiver;
 import org.osmdroid.tileprovider.modules.IArchiveFile;
