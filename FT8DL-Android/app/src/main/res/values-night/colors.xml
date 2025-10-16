@@ -58,7 +58,7 @@
     <!--   欢迎界面的背景色 -->
     <color name="welcome_layout_ground_color">#000000</color>
     <color name="welcome_layout_text_color">#B6B6B6</color>
-    <color name="welcome_logo_text_color">#DBC1FF</color>
+    <color name="welcome_logo_text_color">@color/primary</color>
     <color name="osm_grid_out_line_color">#7FFFFFFF</color>
 
     <color name="tracker_calling_list_background_color">#94000000</color>

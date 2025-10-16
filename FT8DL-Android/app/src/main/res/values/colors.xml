@@ -163,7 +163,7 @@
 <!-- Welcome screen background color -->
     <color name="welcome_layout_ground_color">#EDEDED</color>
     <color name="welcome_layout_text_color">#535353</color>
-    <color name="welcome_logo_text_color">#FF6200EE</color>
+    <color name="welcome_logo_text_color">@color/primary</color>
     <color name="osm_grid_out_line_color">#7FFFFFFF</color>
 
 
