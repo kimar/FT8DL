@@ -18,11 +18,11 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.bg7yoz.ft8cn"
+        applicationId "de.da6km.ft8dl"
         minSdk 23
         targetSdk 33
         versionCode 1
-        versionName '0.93'
+        versionName '0.0.0'
 
 
         dataBinding{
