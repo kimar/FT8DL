@@ -20,6 +20,7 @@ import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -732,7 +733,13 @@ public class MainActivity extends AppCompatActivity {
         intentFilter.addAction(BluetoothAdapter.EXTRA_STATE);
         intentFilter.addAction("android.bluetooth.BluetoothAdapter.STATE_OFF");
         intentFilter.addAction("android.bluetooth.BluetoothAdapter.STATE_ON");
-        registerReceiver(mReceive, intentFilter);
+
+        // Use the new Android 13+ API to specify receiver export flag
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mReceive, intentFilter, Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(mReceive, intentFilter);
+        }
     }
 
     /**
