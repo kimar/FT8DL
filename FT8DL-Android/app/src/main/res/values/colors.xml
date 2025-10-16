@@ -9,6 +9,7 @@
 
     <!-- existing colors -->
     <color name="purple_200">#768948</color>
+    <color name="purple_500">#607744</color>
     <color name="primary">#607744</color>
     <color name="transmitLayout_background">#B234623f</color>
 
@@ -147,19 +148,19 @@
     <color name="help_dialog_text_color">#E1BEE7</color>
 
 
-<!--    编辑框外部窗体-->
+<!-- Edit box external container -->
     <color name="edit_layout_background_stroke">#977A7878</color>
     <color name="edit_layout_background_gradient_start">#E9E9E9</color>
     <color name="edit_layout_background_gradient_end">#FFFFFFFF</color>
 
-<!--    选择串口背景色-->
+<!-- Serial port selection background color -->
     <color name="select_serial_port_layout_background_gradient_start">#DC414141</color>
     <color name="select_serial_port_layout_background_gradient_end">#DC414141</color>
 
-    <!--    选择串口值背景色-->
+    <!-- Serial port selection value background color -->
     <color name="select_serial_port_item_gradient_start">#DC414141</color>
     <color name="select_serial_port_item_background_gradient_end">#DC414141</color>
-<!--   欢迎界面的背景色 -->
+<!-- Welcome screen background color -->
     <color name="welcome_layout_ground_color">#EDEDED</color>
     <color name="welcome_layout_text_color">#535353</color>
     <color name="welcome_logo_text_color">#FF6200EE</color>
@@ -183,5 +184,32 @@
     <color name="char_bar_15">#770A8F</color>
     <color name="char_bar_16">#61024D</color>
 
+    <!-- Material 3 semantic colors using your palette -->
+    <color name="md_theme_light_primary">@color/purple_500</color>
+    <color name="md_theme_light_onPrimary">@color/white</color>
+    <color name="md_theme_light_primaryContainer">@color/purple_700</color>
+    <color name="md_theme_light_onPrimaryContainer">@color/white</color>
+    <color name="md_theme_light_secondary">@color/teal_200</color>
+    <color name="md_theme_light_onSecondary">@color/black</color>
+    <color name="md_theme_light_secondaryContainer">@color/teal_700</color>
+    <color name="md_theme_light_onSecondaryContainer">@color/white</color>
+    <color name="md_theme_light_tertiary">@color/purple_200</color>
+    <color name="md_theme_light_onTertiary">@color/black</color>
+    <color name="md_theme_light_tertiaryContainer">@color/purple_200</color>
+    <color name="md_theme_light_onTertiaryContainer">@color/black</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onError">@color/white</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    <color name="md_theme_light_background">@color/white</color>
+    <color name="md_theme_light_onBackground">@color/black</color>
+    <color name="md_theme_light_surface">@color/white</color>
+    <color name="md_theme_light_onSurface">@color/black</color>
+    <color name="md_theme_light_surfaceVariant">#F2F0FF</color>
+    <color name="md_theme_light_onSurfaceVariant">#46464F</color>
+    <color name="md_theme_light_outline">#777680</color>
+    <color name="md_theme_light_inverseOnSurface">#F1F0F4</color>
+    <color name="md_theme_light_inverseSurface">#313033</color>
+    <color name="md_theme_light_inversePrimary">@color/purple_200</color>
 
 </resources>

@@ -69,4 +69,31 @@
     <color name="tracker_sample_cq_bar_start_color">#000105</color>
     <color name="tracker_sample_cq_bar_end_color">#C100076A</color>
 
+    <!-- Material 3 semantic colors for dark theme -->
+    <color name="md_theme_dark_primary">@color/purple_200</color>
+    <color name="md_theme_dark_onPrimary">@color/black</color>
+    <color name="md_theme_dark_primaryContainer">@color/purple_700</color>
+    <color name="md_theme_dark_onPrimaryContainer">@color/white</color>
+    <color name="md_theme_dark_secondary">@color/teal_200</color>
+    <color name="md_theme_dark_onSecondary">@color/black</color>
+    <color name="md_theme_dark_secondaryContainer">@color/teal_700</color>
+    <color name="md_theme_dark_onSecondaryContainer">@color/white</color>
+    <color name="md_theme_dark_tertiary">@color/purple_500</color>
+    <color name="md_theme_dark_onTertiary">@color/white</color>
+    <color name="md_theme_dark_tertiaryContainer">@color/purple_700</color>
+    <color name="md_theme_dark_onTertiaryContainer">@color/white</color>
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+    <color name="md_theme_dark_background">#121212</color>
+    <color name="md_theme_dark_onBackground">#E6E1E5</color>
+    <color name="md_theme_dark_surface">#121212</color>
+    <color name="md_theme_dark_onSurface">#E6E1E5</color>
+    <color name="md_theme_dark_surfaceVariant">#46464F</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C7C5D0</color>
+    <color name="md_theme_dark_outline">#918F99</color>
+    <color name="md_theme_dark_inverseOnSurface">#1D1B20</color>
+    <color name="md_theme_dark_inverseSurface">#E6E1E5</color>
+    <color name="md_theme_dark_inversePrimary">@color/purple_500</color>
 </resources>

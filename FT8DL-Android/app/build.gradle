@@ -15,12 +15,12 @@ static def getCurrentTime() {
 
 android {
 
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "de.da6km.ft8dl"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName '0.0.0'
 
@@ -72,13 +72,13 @@ android {
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.lifecycle:lifecycle-livedata:2.5.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.7.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.navigation:navigation-fragment:2.5.3'
-    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'androidx.navigation:navigation-fragment:2.7.6'
+    implementation 'androidx.navigation:navigation-ui:2.7.6'
 
     implementation 'com.google.guava:guava:31.1-jre'//用于HashTable（多key的HashMap）
 
