@@ -741,7 +741,11 @@ public class MainActivity extends AppCompatActivity {
      */
     private void unregisterBluetoothReceiver() {
         if (mReceive != null) {
-            unregisterReceiver(mReceive);
+            try {
+                unregisterReceiver(mReceive);
+            } catch (Exception e) {
+                Log.e(TAG, "Caught exception unregisterReceiver:" + e);
+            }
             mReceive = null;
         }
     }
