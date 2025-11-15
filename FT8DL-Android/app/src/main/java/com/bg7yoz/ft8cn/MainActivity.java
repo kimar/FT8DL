@@ -20,7 +20,6 @@ import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -68,7 +67,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 
@@ -321,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
         //判断导入共享log文件的工作线程还在，如果在，就显示对话框
         if (Boolean.TRUE.equals(mainViewModel.mutableImportShareRunning.getValue())) {
             showShareDialog();
-        }else {
+        } else {
             //读取共享的文件
             doReceiveShareFile(getIntent());
         }
@@ -331,6 +329,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 接收共享文件
+     *
      * @param intent intent
      */
     private void doReceiveShareFile(Intent intent) {
@@ -343,45 +342,45 @@ public class MainActivity extends AppCompatActivity {
             try {
 
                 importSharedLogs = new ImportSharedLogs(mainViewModel);
-                Log.e(TAG,"开始导入。。。");
+                Log.e(TAG, "开始导入。。。");
                 mainViewModel.mutableImportShareRunning.setValue(true);
                 importSharedLogs.doImport(getBaseContext().getContentResolver().openInputStream(uri)
-                        ,new OnShareLogEvents() {
-                    @Override
-                    public void onPreparing(String info) {
-                        mainViewModel.mutableShareInfo.postValue(info);
-                    }
+                        , new OnShareLogEvents() {
+                            @Override
+                            public void onPreparing(String info) {
+                                mainViewModel.mutableShareInfo.postValue(info);
+                            }
 
-                    @Override
-                    public void onShareStart(int count, String info) {
-                        mainViewModel.mutableSharePosition.postValue(0);
-                        mainViewModel.mutableShareInfo.postValue(info);
-                        mainViewModel.mutableImportShareRunning.postValue(true);
-                        mainViewModel.mutableShareCount.postValue(count);
-                    }
+                            @Override
+                            public void onShareStart(int count, String info) {
+                                mainViewModel.mutableSharePosition.postValue(0);
+                                mainViewModel.mutableShareInfo.postValue(info);
+                                mainViewModel.mutableImportShareRunning.postValue(true);
+                                mainViewModel.mutableShareCount.postValue(count);
+                            }
 
-                    @Override
-                    public boolean onShareProgress(int count, int position, String info) {
-                        mainViewModel.mutableSharePosition.postValue(position);
-                        mainViewModel.mutableShareInfo.postValue(info);
-                        mainViewModel.mutableShareCount.postValue(count);
-                        return Boolean.TRUE.equals(mainViewModel.mutableImportShareRunning.getValue());
-                    }
+                            @Override
+                            public boolean onShareProgress(int count, int position, String info) {
+                                mainViewModel.mutableSharePosition.postValue(position);
+                                mainViewModel.mutableShareInfo.postValue(info);
+                                mainViewModel.mutableShareCount.postValue(count);
+                                return Boolean.TRUE.equals(mainViewModel.mutableImportShareRunning.getValue());
+                            }
 
-                    @Override
-                    public void afterGet(int count, String info) {
-                        mainViewModel.mutableShareInfo.postValue(info);
-                        mainViewModel.mutableImportShareRunning.postValue(false);
-                    }
+                            @Override
+                            public void afterGet(int count, String info) {
+                                mainViewModel.mutableShareInfo.postValue(info);
+                                mainViewModel.mutableImportShareRunning.postValue(false);
+                            }
 
-                    @Override
-                    public void onShareFailed(String info) {
-                        mainViewModel.mutableShareInfo.postValue(info);
-                    }
-                });
+                            @Override
+                            public void onShareFailed(String info) {
+                                mainViewModel.mutableShareInfo.postValue(info);
+                            }
+                        });
             } catch (IOException e) {
                 mainViewModel.mutableImportShareRunning.postValue(false);
-                Log.e(TAG,String.format("错误：%s",e.getMessage()));
+                Log.e(TAG, String.format("错误：%s", e.getMessage()));
                 ToastMessage.show(e.getMessage());
             }
         } else {
@@ -520,7 +519,7 @@ public class MainActivity extends AppCompatActivity {
     private void showShareDialog() {
         dialog = new ShareLogsProgressDialog(
                 binding.getRoot().getContext()
-                , mainViewModel,true);
+                , mainViewModel, true);
 
         dialog.show();
         mainViewModel.mutableSharePosition.postValue(0);
@@ -662,7 +661,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         if ("android.hardware.usb.action.USB_DEVICE_ATTACHED".equals(intent.getAction())) {
             mainViewModel.getUsbDevice();
-        }else {
+        } else {
             setIntent(intent);//因为处于单例模式，所以要更新一下intent
             doReceiveShareFile(getIntent());
         }
@@ -734,12 +733,7 @@ public class MainActivity extends AppCompatActivity {
         intentFilter.addAction("android.bluetooth.BluetoothAdapter.STATE_OFF");
         intentFilter.addAction("android.bluetooth.BluetoothAdapter.STATE_ON");
 
-        // Use the new Android 13+ API to specify receiver export flag
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(mReceive, intentFilter, Context.RECEIVER_NOT_EXPORTED);
-        } else {
-            registerReceiver(mReceive, intentFilter);
-        }
+        ContextCompat.registerReceiver(getApplicationContext(), mReceive, intentFilter, ContextCompat.RECEIVER_NOT_EXPORTED);
     }
 
     /**
