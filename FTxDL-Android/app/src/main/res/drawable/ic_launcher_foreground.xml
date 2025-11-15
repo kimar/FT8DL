@@ -1,20 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
-    android:viewportWidth="252"
-    android:viewportHeight="183.59999">
-  <group android:scaleX="0.50693876"
-      android:scaleY="0.36934108"
-      android:translateX="62.125713"
-      android:translateY="60.91077">
-    <group android:translateY="138.096">
-      <path android:pathData="M11.952,0L11.952,-108L72,-108L72,-96.048L36,-96.048L36,-60.048L60.048,-60.048L60.048,-47.952L36,-47.952L36,0Z"
-          android:fillColor="#768948"/>
-      <path android:pathData="M108.048,0L108.048,-96.048L84,-96.048L84,-108L156,-108L156,-96.048L131.952,-96.048L131.952,0Z"
-          android:fillColor="#768948"/>
-      <path android:pathData="M167.952,0L167.952,-18Q167.952,-28.656,174,-34.632Q180.048,-40.608,192,-42.048Q180.048,-43.344,174,-49.392Q167.952,-55.44,167.952,-65.952L167.952,-83.952L192,-83.952L192,-60.048Q192,-55.008,195.528,-51.48Q199.056,-47.952,203.952,-47.952Q208.992,-47.952,212.52,-51.48Q216.048,-55.008,216.048,-60.048L216.048,-83.952L239.952,-83.952L239.952,-65.952Q239.952,-55.44,233.976,-49.392Q228,-43.344,216.048,-42.048Q228,-40.608,233.976,-34.56Q239.952,-28.512,239.952,-18L239.952,0L216.048,0L216.048,-24.048Q216.048,-28.944,212.52,-32.472Q208.992,-36,203.952,-36Q199.056,-36,195.528,-32.472Q192,-28.944,192,-24.048L192,0Z"
-          android:fillColor="#768948"/>
-    </group>
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#768948">
+  <group android:scaleX="0.37584"
+      android:scaleY="0.37584"
+      android:translateX="7.48992"
+      android:translateY="7.6152">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,5c-3.87,0 -7,3.13 -7,7h2c0,-2.76 2.24,-5 5,-5s5,2.24 5,5h2c0,-3.87 -3.13,-7 -7,-7zM13,14.29c0.88,-0.39 1.5,-1.26 1.5,-2.29 0,-1.38 -1.12,-2.5 -2.5,-2.5S9.5,10.62 9.5,12c0,1.02 0.62,1.9 1.5,2.29v3.3L7.59,21 9,22.41l3,-3 3,3L16.41,21 13,17.59v-3.3zM12,1C5.93,1 1,5.93 1,12h2c0,-4.97 4.03,-9 9,-9s9,4.03 9,9h2c0,-6.07 -4.93,-11 -11,-11z"/>
   </group>
 </vector>
